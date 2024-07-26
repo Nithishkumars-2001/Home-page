@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'poppins',sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color:  rgb(252, 244, 244);
+}
+
+.navbar-links{
+    display: flex;
+    column-gap: 20px;
+}
+
+.navbar-links a{
+    text-decoration: none;
+    color: rgb(51, 32, 32);
+    cursor: pointer;
+}
+
+.navbar-links a:hover{
+    text-decoration: underline;
+    color: red;
+}
+
+.navbar h1{
+    color: red;
+}
+
+.navbar-menu-toggle{
+    display: none;
+}
+
+/* side navbar */
+
+.side-navbar{
+    background-color: rgb(226, 226, 201);
+    width: 45%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    transition: 2s;
+}
+
+.side-navbar-link{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.side-navbar-links a{
+    text-decoration: none;
+    color: rgb(51, 32, 32);
+    cursor: pointer;
+}
+
+.cross-symbol{
+    color: red;
+    text-align: right;
+    font-size: 20px;
+}
+
+.side-navbar-links a:hover{
+    text-decoration: underline;
+    color: red;
+}
+
+.side-navbar h1{
+    font-size: 15px;
+    color: red;
+}
+
+/* Header */
+
+.header{
+    display: flex;
+    justify-content: column;
+    padding: 50px;
+}
+
+.header-text h1 span{
+    color: red;
+}
+
+.header-text{
+    font-size: 20px;
+}
+
+.header-text p{
+    padding: 10px;
+}
+
+.header-text p i{
+    font-size: 15px;
+    color: orangered;
+    padding-right: 10px;
+}
+
+.enroll-btn{
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+    margin-left: 43px;
+    color: white;
+    background-color: rgb(94, 94, 163);
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.social-media-profiles{
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+.social-icons a{
+    font-size: 30px;
+    margin-right: 40px;
+    text-decoration: none;
+    color: rgb(22, 129, 129);
+    cursor: pointer;
+}
+
+.social-icons a:hover{
+    color: red;
+}
+
+/* Media query */
+
+@media screen and (max-width:700px){
+    .navbar-menu-toggle{
+        display: block;
+    }
+
+    .navbar-links{
+        display: none;
+    }
+
+    .header{
+        padding-left: 20px;
+    }
+
+    .header-text{
+        font-size: 15px;
+    }
+
+    .social-media-profiles h2{
+        font-size: 15px;
+    }
+
+    .social-icons a{
+        font-size: 25px;
+    }
+
+}
